@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
         Vector3 shootDirection = (targetPosition - transform.position);
         shootDirection = shootDirection / Mathf.Sqrt((shootDirection.x * shootDirection.x) + (shootDirection.y * shootDirection.y));
 
-        GameObject clawInstance = Instantiate(claw, transform.position, Quaternion.identity);
+        GameObject clawInstance = Instantiate(claw, transform.position, Quaternion.identity, transform);
         Rigidbody2D clawRigidbody = clawInstance.GetComponent<Rigidbody2D>();
 
         Collider2D playerCollider = GetComponent<Collider2D>();

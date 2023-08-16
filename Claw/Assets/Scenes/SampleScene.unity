@@ -454,7 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootSpeed: 30
   swingForce: 30
-  maxSwingDistance: 20
+  maxSwingDistance: 15
   claw: {fileID: 1568133595438238645, guid: 9e851f38ac9d1d4408089ee418656fe8, type: 3}
 --- !u!1 &418178731
 GameObject:
@@ -676,7 +676,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -720,6 +720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 193662426}
+  newCameraSize: 10
+  zoomSpeed: 2
 --- !u!1 &748001164
 GameObject:
   m_ObjectHideFlags: 0
