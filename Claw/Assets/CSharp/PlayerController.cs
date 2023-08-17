@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    public GameObject box;
     public float shootSpeed = 10f;
     public float swingForce = 20f; // 用於擺動的力大小
     public float maxSwingDistance = 20f; // 最大擺動距離
@@ -66,17 +67,20 @@ public class Player : MonoBehaviour
 
     private void ApplySwingForce()
     {
-        Claw clawController = currentClaw.GetComponent<Claw>();
+        ClawController clawController = currentClaw.GetComponent<ClawController>();
         if (clawController != null && clawController.isCaught()) // 檢查爪子是否抓住物體
         {
-            Vector2 playerToClaw = currentClaw.transform.position - transform.position;
-            float distance = playerToClaw.magnitude;
-
-            if (distance <= maxSwingDistance)
+            if (clawController.CaughtObject.CompareTag("Floor"))
             {
-                Vector2 swingDirection = playerToClaw.normalized;
-                Vector2 force = swingDirection * swingForce;
-                GetComponent<Rigidbody2D>().AddForce(force);
+                Vector2 playerToClaw = currentClaw.transform.position - transform.position;
+                float distance = playerToClaw.magnitude;
+
+                if (distance <= maxSwingDistance)
+                {
+                    Vector2 swingDirection = playerToClaw.normalized;
+                    Vector2 force = swingDirection * swingForce;
+                    GetComponent<Rigidbody2D>().AddForce(force);
+                }
             }
         }
     }
