@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishAreaController : MonoBehaviour
 {
@@ -8,14 +9,12 @@ public class FinishAreaController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // 當玩家進入觸發區域時
-            PlayerPassedLevel();
+            Invoke("PlayerPassedLevel", 0.3f);
         }
     }
 
     private void PlayerPassedLevel()
     {
-        // 在這裡執行玩家通過關卡的相關操作
-        Debug.Log("玩家通過了關卡！");
+        SceneManager.LoadScene("LevelSelection");
     }
 }
