@@ -934,6 +934,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8490403672486500838, guid: 738744f49c93764459f616aa2f37952e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490403672486500838, guid: 738744f49c93764459f616aa2f37952e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1461233776}
+    - target: {fileID: 8490403672486500838, guid: 738744f49c93764459f616aa2f37952e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SelectLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490403672486500838, guid: 738744f49c93764459f616aa2f37952e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelSelectionController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490403672486500838, guid: 738744f49c93764459f616aa2f37952e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490403672486500838, guid: 738744f49c93764459f616aa2f37952e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8886325521019210538, guid: 738744f49c93764459f616aa2f37952e, type: 3}
       propertyPath: m_Name
       value: LevelButton (2)

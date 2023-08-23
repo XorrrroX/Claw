@@ -70,8 +70,6 @@ public class PlayerController : MonoBehaviour
         ClawController clawController = currentClaw.GetComponent<ClawController>();
         if (clawController != null && clawController.isCaught()) // 檢查爪子是否抓住物體
         {
-            if (clawController.CaughtObject.CompareTag("Floor"))
-            {
                 Vector2 playerToClaw = currentClaw.transform.position - transform.position;
                 float distance = playerToClaw.magnitude;
 
@@ -81,7 +79,6 @@ public class PlayerController : MonoBehaviour
                     Vector2 force = swingDirection * swingForce;
                     GetComponent<Rigidbody2D>().AddForce(force);
                 }
-            }
         }
     }
 }
