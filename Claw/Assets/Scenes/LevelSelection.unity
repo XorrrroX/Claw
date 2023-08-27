@@ -262,7 +262,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1969548071103750773, guid: 738744f49c93764459f616aa2f37952e, type: 3}
       propertyPath: m_text
-      value: 4
+      value: Coming Soon
       objectReference: {fileID: 0}
     - target: {fileID: 6147809440521341009, guid: 738744f49c93764459f616aa2f37952e, type: 3}
       propertyPath: m_Pivot.x
@@ -367,7 +367,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1969548071103750773, guid: 738744f49c93764459f616aa2f37952e, type: 3}
       propertyPath: m_text
-      value: 3
+      value: Coming Soon
       objectReference: {fileID: 0}
     - target: {fileID: 6147809440521341009, guid: 738744f49c93764459f616aa2f37952e, type: 3}
       propertyPath: m_Pivot.x
