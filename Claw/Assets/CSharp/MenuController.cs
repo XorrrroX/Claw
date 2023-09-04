@@ -10,4 +10,8 @@ public class MenuController : MonoBehaviour
         // 切換到選擇關卡場景（Assuming "LevelSelection" is the scene name）
         SceneManager.LoadScene("LevelSelection");
     }
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

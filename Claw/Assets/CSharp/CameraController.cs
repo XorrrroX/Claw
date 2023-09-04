@@ -12,7 +12,6 @@ public class CameraController : MonoBehaviour
         Camera.main.orthographicSize = newCameraSize;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = new Vector3(player.position.x,player.position.y,-20f);

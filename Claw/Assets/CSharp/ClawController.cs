@@ -18,15 +18,19 @@ public class ClawController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         CaughtObject = collision.gameObject;
-        if (collision.gameObject.CompareTag("Floor") && !hasCollided)
+        if (!hasCollided)
         {
-            rb.constraints = RigidbodyConstraints2D.FreezeAll;
-            hasCollided = true;
+            if (collision.gameObject.CompareTag("Floor"))
+            {
+                rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                hasCollided = true;
+            }
+            if (collision.gameObject.CompareTag("Fan"))
+            {
+                Destroy(gameObject);
+            }
         }
-        if (collision.gameObject.CompareTag("Fan") && !hasCollided)
-        {
-            Destroy(gameObject);
-        }
+
     }
     public bool isCaught()
     {

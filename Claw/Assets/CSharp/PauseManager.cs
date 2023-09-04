@@ -11,7 +11,12 @@ public class PauseManager : MonoBehaviour
 
     private void Start()
     {
-        pauseUI.SetActive(false); // ¡Ù¬√º»∞±UI
+        pauseUI.SetActive(false);
+        //Invoke("SetPauseUI", 0.00000001f);
+    }
+    private void SetPauseUI()
+    {
+        pauseUI.SetActive(false);
     }
     private void Update()
     {
