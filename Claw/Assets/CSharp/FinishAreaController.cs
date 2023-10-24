@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class FinishAreaController : MonoBehaviour
 {
+    public FinishManager finishManager;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -15,6 +17,6 @@ public class FinishAreaController : MonoBehaviour
 
     private void PlayerPassedLevel()
     {
-        SceneManager.LoadScene("LevelSelection");
+        finishManager.ShowFinishUI();
     }
 }

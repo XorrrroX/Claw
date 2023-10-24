@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
     public GameObject box;
     public GameObject claw;
     public float shootSpeed = 10f;
-    public float swingForce = 20f; // 用於擺動的力大小
-    public float maxSwingDistance = 20f; // 最大擺動距離
+    public float swingForce = 20f;
+    public float maxSwingDistance = 20f;
     private Camera mainCamera;
     private GameObject currentClaw;
 
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 GetTargetPosition()
     {
         Vector3 mousePosition = Input.mousePosition;
-        mousePosition.z = mainCamera.nearClipPlane; // 設置滑鼠 Z 座標為攝影機近平面的位置
+        mousePosition.z = mainCamera.nearClipPlane;
         Vector3 targetPosition = mainCamera.ScreenToWorldPoint(mousePosition);
         return targetPosition;
     }
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
     private void ApplySwingForce()
     {
         ClawController clawController = currentClaw.GetComponent<ClawController>();
-        if (clawController != null && clawController.isCaught()) // 檢查爪子是否抓住物體
+        if (clawController != null && clawController.isCaught())
         {
                 Vector2 playerToClaw = currentClaw.transform.position - transform.position;
                 float distance = playerToClaw.magnitude;

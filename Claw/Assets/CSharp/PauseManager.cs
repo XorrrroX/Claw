@@ -6,13 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class PauseManager : MonoBehaviour
 {
-    public GameObject pauseUI; // 暫停UI的參考
+    public GameObject pauseUI;
     private bool isPaused = false;
 
     private void Start()
     {
         pauseUI.SetActive(false);
-        //Invoke("SetPauseUI", 0.00000001f);
     }
     private void SetPauseUI()
     {
@@ -33,19 +32,18 @@ public class PauseManager : MonoBehaviour
 
         if (isPaused)
         {
-            Time.timeScale = 0; // 暫停遊戲
-            pauseUI.SetActive(true); // 顯示暫停UI
+            Time.timeScale = 0;
+            pauseUI.SetActive(true);
         }
         else
         {
-            Time.timeScale = 1; // 恢復遊戲時間流逝
-            pauseUI.SetActive(false); // 隱藏暫停UI
+            Time.timeScale = 1;
+            pauseUI.SetActive(false);
         }
     }
 
     public void RestartLevel()
     {
-        // 重新載入當前場景
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
         Time.timeScale = 1;
@@ -53,7 +51,6 @@ public class PauseManager : MonoBehaviour
 
     public void ReturnToLevelSelection()
     {
-        // 切換到選擇關卡場景
         SceneManager.LoadScene("LevelSelection");
         Time.timeScale = 1;
     }
