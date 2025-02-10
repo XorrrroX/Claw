@@ -5,25 +5,37 @@ EditorUserSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 4
   m_ConfigSettings:
+    GraphicsSettingsInspector_UserSettings:
+      value: 18134705175a055722080a3115371d4a0d55006876786860616b0471b8b16460acb72ba5a52a362c3c0ee63201181433fe3e101bf3250b06144ca74c33ea191f058831cb58d5
+      flags: 0
     RecentlyUsedSceneGuid-0:
-      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
+      value: 5202505e50575b0f58585f2747730a44131640727f2c7235797f1e30e1b33761
       flags: 0
     RecentlyUsedSceneGuid-1:
-      value: 5608525e07035a09545c582713740644134f4f282a2a2766787a1b67e4b4303c
+      value: 02500d0350000c5a5a0a587a43715c4446154f2f2e78246774781c60e1e26c39
       flags: 0
     RecentlyUsedSceneGuid-2:
-      value: 05040452005651035f0f5b2148215944411641727d7b20612b704965b0e43739
+      value: 5a530d055502505f5a5d547216735a4440151a2f292e70612b2d1b66e6e23261
       flags: 0
     RecentlyUsedSceneGuid-3:
-      value: 51020403520651080e5a5f2311705944414f1a7f7d717e36742a4e64e4b0616f
+      value: 060307025d025d0c0e085920147108444e151e722d2c73607b2c4836e6e16560
       flags: 0
     RecentlyUsedSceneGuid-4:
-      value: 56020d0401070d035d0a5d7744200e44154f487c282e7e697e781e61e6b3306f
+      value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
       flags: 0
     RecentlyUsedSceneGuid-5:
       value: 5003565f07040a0f5b5d092443210644444e1e2e797822357d2b1930e7b56060
       flags: 0
     RecentlyUsedSceneGuid-6:
+      value: 5608525e07035a09545c582713740644134f4f282a2a2766787a1b67e4b4303c
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 51020403520651080e5a5f2311705944414f1a7f7d717e36742a4e64e4b0616f
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 56020d0401070d035d0a5d7744200e44154f487c282e7e697e781e61e6b3306f
+      flags: 0
+    RecentlyUsedSceneGuid-9:
       value: 0557575703045d5955565c7a15220a4412151b29797176692f784b37b5b66c3e
       flags: 0
     vcSharedLogLevel:
@@ -43,4 +55,6 @@ EditorUserSettings:
   m_VCHierarchyOverlayIcons: 1
   m_VCOtherOverlayIcons: 1
   m_VCAllowAsyncUpdate: 1
+  m_VCScanLocalPackagesOnConnect: 1
   m_ArtifactGarbageCollection: 1
+  m_CompressAssetsOnImport: 1

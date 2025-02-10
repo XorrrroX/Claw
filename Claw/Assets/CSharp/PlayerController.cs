@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject box;
     public GameObject claw;
     public float shootSpeed = 10f;
     public float swingForce = 20f;
@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonUp("Fire1") && currentClaw != null)
         {
             ReleaseClaw();
+        }
+        if (transform.position.y <= -100){
+            PlayerFailed();
         }
     }
 
@@ -62,7 +65,7 @@ public class PlayerController : MonoBehaviour
         SetupCollider(clawInstance);
         SetupRotation(clawInstance, shootDirection);
         currentClaw = clawInstance;
-        clawRigidbody.velocity = shootDirection * shootSpeed;
+        clawRigidbody.linearVelocity = shootDirection * shootSpeed;
     }
     private void SetupCollider(GameObject clawInstance)
     {
@@ -98,5 +101,11 @@ public class PlayerController : MonoBehaviour
                     GetComponent<Rigidbody2D>().AddForce(force);
                 }
         }
+    }
+
+    private void PlayerFailed()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
     }
 }
